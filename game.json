@@ -15,7 +15,7 @@
     "rooms": {
       "START": {
         "name": "Starting place",
-        "desc": "This is the place to start!",
+        "desc": "This is the place to start! The possibilities are endless from here. You must take a step into the unknown to see what this land holds for you. In your inventory, you have nothing more than a torch and kindling.",
         "exits": [
           {
             "verb": "NORTH",
@@ -38,14 +38,186 @@
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": [ "torch", "kindling"]
       },
       "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
+        "name": "The Fountain",
+        "desc": "Your leap of faith has led you to an empty, scum ridden fountain. On the edge of the interior, you find a compass. ",
         "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "START",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC3",
+            "condition": ""
+          }
         ],
-        "inventory": []
-      }
-    }
+        "inventory": ["torch", "kindling","compass"]
+      },
+      "LOC3": {
+        "name": "The Field",
+        "desc": "An expansive and empty field, flanked on opposite sides by a rickety home and an old church. There is nothing at all in this area. Your compass seems to be experiencing some sort of interference.",
+        "exits":[
+          {
+            "verb": "NORTH",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC4",
+            "condition": ""
+          }
+
+        ],
+        "inventory": ["torch", "kindling", "compass"]
+      },
+      "LOC4": {
+        "name": "The Old Church",
+        "desc": "A broken down and abandoned church, long lost to the pains of time. Across the field to your east, you can see the abandoned house.",
+        "info": "Within the church, there is an old picture of a frontier family, empty bullet casings, and a rusty knife. You pick up the knife.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC6",
+            "condition": ""
+          }
+
+        ],
+        "inventory": ["compass","kindling","torch","rusty knife"]
+      },
+      "LOC5": {
+        "name": "The House",
+        "desc": "A ramshackle hut that is far past it's prime. There is no sign of anyone having been here in some time. In the northern distance, through the trees, you can make out a barn of some sort. There is nothing of value or importance here, unless you have an affinity for rotten wood and broken ceramics.",
+        "exits":[
+          {
+            "verb": "NORTH",
+            "target": "LOC6",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC3",
+            "condition": ""
+          }
+
+        ],
+        "inventory": ["compass","kindling","rusty knife","torch"]
+      },
+      "LOC6": {
+        "name": "The Barn",
+        "desc": "Rough and rugged, a large barn stands in front of you. It seems to be as abandoned as everything else here. There is nothing else in sight ",
+        "info": "Outside of the large doors, you find a small gem. It shines with the brilliance of the sun.",
+        "exits":[
+          {
+            "verb": "NORTH",
+            "target": "LOC7",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC4",
+            "condition": ""
+          }
+
+        ],
+        "inventory": ["compass","kindling","rusty knife","torch","strange gem"]
+      },
+      "LOC7": {
+        "name": "The Second Field",
+        "desc": "An expansive and empty field, much like the one you encountered earlier. Inversely, you cannot see anything in the distance or in your immediate surroundings. Your compass stops working once again.",
+        "exits":[
+          {
+            "verb": "NORTH",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC6",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC2",
+            "condition": ""
+          }
+
+        ],
+        "inventory": ["compass","kindling","rusty knife","strange gem","torch"]
+
+    },
+    "LOC8": {
+      "name": "The Monolith",
+      "desc": "You've come upon a frighteningly large installation, uncharacteristically modern looking in comparison to it's surroundings. It hums with a tone that is unlike anything you've ever heard before. There doesn't seem to be any escape from here. This is it for you",
+      "exits":[
+
+      ],
+      "inventory":["compass","kindling","rusty knife","strange gem","torch"]
+
   }
+}
+}
