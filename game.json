@@ -15,7 +15,7 @@
     "rooms": {
       "START": {
         "name": "Starting place",
-        "desc": "This is the place to start! The possibilities are endless from here. You must take a step into the unknown to see what this land holds for you. In your inventory, you have nothing more than a torch and kindling.",
+        "desc": "This is the place to start! The possibilities are endless from here. You must take a step into the unknown to see what this land holds for you. On the ground before you, you see a torch and kindling.",
         "exits": [
           {
             "verb": "NORTH",
@@ -213,7 +213,7 @@
     "LOC8": {
       "name": "The Monolith",
       "desc": "You've come upon a frighteningly large installation, uncharacteristically modern looking in comparison to it's surroundings. It hums with a tone that is unlike anything you've ever heard before. There doesn't seem to be any escape from here. This is it for you",
-      "exits":[
+      "exits": [
 
       ],
       "inventory":["compass","kindling","rusty knife","strange gem","torch"]
