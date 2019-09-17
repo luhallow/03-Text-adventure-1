@@ -9,7 +9,9 @@
       { "v": "EAST",    "map": "EAST"  },
       { "v": "E",       "map": "EAST"  },
       { "v": "WEST",    "map": "WEST"  },
-      { "v": "W",       "map": "WEST"  }
+      { "v": "W",       "map": "WEST"  },
+      { "v": "TAKE",    "map": "GET"   },
+      { "v": "GET",     "map": "GET"   }
     ],
 
     "rooms": {
@@ -65,7 +67,7 @@
             "condition": ""
           }
         ],
-        "inventory": ["torch", "kindling","compass"]
+        "inventory": ["compass"]
       },
       "LOC3": {
         "name": "The Field",
@@ -93,12 +95,11 @@
           }
 
         ],
-        "inventory": ["torch", "kindling", "compass"]
+        "inventory": []
       },
       "LOC4": {
         "name": "The Old Church",
-        "desc": "A broken down and abandoned church, long lost to the pains of time. Across the field to your east, you can see the abandoned house.",
-        "info": "Within the church, there is an old picture of a frontier family, empty bullet casings, and a rusty knife. You pick up the knife.",
+        "desc": "A broken down and abandoned church, long lost to the pains of time. Across the field to your east, you can see the abandoned house. Within the church, there is an old picture of a frontier family, empty bullet casings, and a rusty knife.",
         "exits": [
           {
             "verb": "NORTH",
@@ -122,7 +123,7 @@
           }
 
         ],
-        "inventory": ["compass","kindling","torch","rusty knife"]
+        "inventory": ["casings","picture","rusty knife"]
       },
       "LOC5": {
         "name": "The House",
@@ -150,12 +151,11 @@
           }
 
         ],
-        "inventory": ["compass","kindling","rusty knife","torch"]
+        "inventory": []
       },
       "LOC6": {
         "name": "The Barn",
-        "desc": "Rough and rugged, a large barn stands in front of you. It seems to be as abandoned as everything else here. There is nothing else in sight ",
-        "info": "Outside of the large doors, you find a small gem. It shines with the brilliance of the sun.",
+        "desc": "Rough and rugged, a large barn stands in front of you. It seems to be as abandoned as everything else here. There is nothing else in sight. Outside of the large doors, you find a small gem. It shines with the brilliance of the sun.",
         "exits":[
           {
             "verb": "NORTH",
@@ -179,7 +179,7 @@
           }
 
         ],
-        "inventory": ["compass","kindling","rusty knife","torch","strange gem"]
+        "inventory": ["strange gem"]
       },
       "LOC7": {
         "name": "The Second Field",
@@ -207,17 +207,62 @@
           }
 
         ],
-        "inventory": ["compass","kindling","rusty knife","strange gem","torch"]
+        "inventory": []
 
     },
     "LOC8": {
       "name": "The Monolith",
       "desc": "You've come upon a frighteningly large installation, uncharacteristically modern looking in comparison to it's surroundings. It hums with a tone that is unlike anything you've ever heard before. There doesn't seem to be any escape from here. This is it for you",
       "exits": [
-
+        {
+          "verb": "NORTH",
+          "target": "LOC9",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "LOC9",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "LOC9",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "LOC9",
+          "condition": ""
+        }
       ],
-      "inventory":["compass","kindling","rusty knife","strange gem","torch"]
-
-  }
+      "inventory":[]
+    },
+    "LOC9": {
+      "name": "The Void",
+      "desc": "Your journey has now led you into an amorphous, nondescript area - completely devoid of earthly characteristics. Amongst the ethereal binding, you can spot out forms - shapeless but moving cohesively - further out in the distance. They look quite a bit like those that you saw in the picture in the church - the frontier family.",
+      "exits": [
+        {
+            "verb": "NORTH",
+            "target": "LOC10",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC11",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC11",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC12",
+            "condition": ""
+          }
+        
+      ]
+    }
 }
 }
