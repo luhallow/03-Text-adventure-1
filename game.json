@@ -261,8 +261,92 @@
             "target": "LOC12",
             "condition": ""
           }
-        
-      ]
+      ],
+        "inventory":[]
+    },
+  
+          "LOC10": {
+            "name": "Ethereal Home",
+            "desc": "As you walk blindly through the void, you come upon a sheer structure. It appears to you as a log cabin of sorts, similar to the one you saw in the waking world. However, you cannot enter this home, as it is intangible - your feet push through it's hazy facade as you attempt to step on it's patio. How strange.",
+            "exits": [
+              {
+                  "verb": "NORTH",
+                  "target": "LOC11",
+                  "condition": ""
+                },
+                {
+                  "verb": "SOUTH",
+                  "target": "LOC9",
+                  "condition": ""
+                },
+                {
+                  "verb": "EAST",
+                  "target": "LOC11",
+                  "condition": ""
+                },
+                {
+                  "verb": "WEST",
+                  "target": "LOC12",
+                  "condition": ""
+                }
+              ],
+              "inventory":[]
+        },
+        "LOC11": {
+          "name": "Abyssal Graveyard",
+          "desc": "Further on in the void, you come upon a graveyard - a graveyard that is cloaked in the most pure black shadows you have ever seen. The stones are cracked and misshapen, mascerated by the waning of time and the harshness of the void. Upon the nearest gravestone, there is a coin of some sort. It is pure white, with odd inscriptions running along the inside edge.",
+          "exits": [
+            {
+                "verb": "NORTH",
+                "target": "LOC12",
+                "condition": ""
+              },
+              {
+                "verb": "SOUTH",
+                "target": "LOC10",
+                "condition": ""
+              },
+              {
+                "verb": "EAST",
+                "target": "LOC12",
+                "condition": ""
+              },
+              {
+                "verb": "WEST",
+                "target": "LOC12",
+                "condition": ""
+              }
+          ],
+          "inventory": ["white coin"]
+        },
+        "LOC12": {
+          "name": "The Edge of the Void",
+          "desc": "Your journey has no reached an end. You have reached the apparent end of the void, as you look down into a pit as black as black has ever been. You see no bottom, no edges - just a pit of endless darkness. Where is there to go from here? Are there any answers to be derived from your journey in this strange land? How strange.",
+          "exits": [
+            {
+                "verb": "NORTH",
+                "target": "",
+                "condition": "end"
+              },
+              {
+                "verb": "SOUTH",
+                "target": "",
+                "condition": "end"
+              },
+              {
+                "verb": "EAST",
+                "target": "",
+                "condition": "end"
+              },
+              {
+                "verb": "WEST",
+                "target": "",
+                "condition": "end"
+              }
+            ],
+            "inventory": []
+          }
+
+      
     }
-}
 }
